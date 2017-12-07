@@ -1,0 +1,12 @@
+Compiling commands for the multithread code
+
+mex -DMT_TV_L1_1bit -O -output ../../private/mt_TV_L1_1bit mtl1_TVPara_v2.cpp
+mex -DMT_TV_L1_1bit -DMATRIX_Lambda -O -output ../../private/mt_TV_L1_1bit_A mtl1_TVPara_v2.cpp
+mex -DMT_TV_L1_8bit -O -output ../../private/mt_TV_L1_8bit mtl1_TVPara_v2.cpp
+mex -DMT_TV_L1_8bit -DMATRIX_Lambda -O -output ../../private/mt_TV_L1_8bit_A mtl1_TVPara_v2.cpp
+mex -DMT_TV_L1_16bit -O -output ../../private/mt_TV_L1_16bit mtl1_TVPara_v2.cpp
+mex -DMT_TV_L1_16bit -DMATRIX_Lambda -O -output ../../private/mt_TV_L1_16bit_A mtl1_TVPara_v2.cpp
+
+Comments:
+
+Need to add compiler flag -EHsc to mexopts.bat to suppress certain warnings.

@@ -1,0 +1,8 @@
+Compiling commands for the divide-and-conquer codes
+
+mex -DDNC_TV_L2_1bit -O -output ../../private/dnc_TV_L2_1bit dnc_v2_TVPara.cpp
+mex -DDNC_TV_L2_1bit -DMATRIX_Lambda -O -output ../../private/dnc_TV_L2_1bit_A dnc_v2_TVPara.cpp
+mex -DDNC_TV_L2_8bit -O -output ../../private/dnc_TV_L2_8bit dnc_v2_TVPara.cpp
+mex -DDNC_TV_L2_8bit -DMATRIX_Lambda -O -output ../../private/dnc_TV_L2_8bit_A dnc_v2_TVPara.cpp
+mex -DDNC_TV_L2_16bit -O -output ../../private/dnc_TV_L2_16bit dnc_v2_TVPara.cpp
+mex -DDNC_TV_L2_16bit -DMATRIX_Lambda -O -output ../../private/dnc_TV_L2_16bit_A dnc_v2_TVPara.cpp

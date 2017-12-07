@@ -1,0 +1,5 @@
+The only change from v2.31 except for the version text "2.32" is
+
+* added "#ifndef NO_DISP" and "#endif" to 3 places, 2 for DNC and MT each and 1 for their shared code, where Kevin Vixie does not want screen output.
+
+* updated helps in "Graph_anisoTV_L1_v2.m" and "Graph_anisoTV_L2_v2.m"

@@ -2,7 +2,7 @@
 %
 % Li, Qing, Wotao Yin, and Zhigang Deng. "Image-based face illumination 
 % transferring using logarithmic total variation models."
-% The visual computer 26.1 (2010): 41-49.
+%ï¿½The visual computerï¿½26.1 (2010): 41-49.
 %
 
 
@@ -29,7 +29,7 @@ function results = relight(img, pt, imgRefA, ptRefA)
     results.mask= mask;
     results.rect = rect;
     mask = imcrop(mask, rect);
-    imgRefA = imcrop(imgRefA, rect).*mask; 
+    imgRefA = imcrop(imgRefA, rect).*repmat(mask,1,1,size(imgRefA,3)); 
     hsv_image = imcrop(img, rect);
     
     % precalculate some of the temp varibles
